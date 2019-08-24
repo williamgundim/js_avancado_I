@@ -7,7 +7,7 @@ class Negociacao{
         this._quantidade = quant;
         this._valor = valor;
         Object.freeze(this);
-    }
+    } 
 
     get volume() {
         return this._quantidade * this.valor;

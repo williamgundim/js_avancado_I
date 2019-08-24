@@ -9,7 +9,7 @@ class NegociacaoController{
         this._nValor = $("#valor");
     }
 
-
+ 
     adiciona(event){
         event.preventDefault();
 
