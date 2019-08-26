@@ -1,2 +1,2 @@
-# js_avancado_I
-Exemplos de orientação a objeto e padrões de desenvolvimento
+# js_avancado
+Exemplos de orientação a objeto e padrões de desenvolvimento com MVC.
