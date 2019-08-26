@@ -3,7 +3,7 @@ class Negociacao{
 
     constructor(date, quant, valor) {
 
-        this._data = new Date(date.getTime());
+        this._data = date;
         this._quantidade = quant;
         this._valor = valor;
         Object.freeze(this);
@@ -14,18 +14,14 @@ class Negociacao{
     }
 
     get data(){
-        //cria uma copia para garantir a imutabilidade    
-        return new Date(this._data.getTime());
+        return this._data;
     }
 
     get quantidade(){
-
         return this._quantidade;
-
     }
 
     get valor(){
-
         return this._valor;
     }
 }
