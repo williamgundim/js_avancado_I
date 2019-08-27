@@ -7,8 +7,11 @@ class NegociacaoController{
         this._nQuant = $("#quantidade");
         this._dData = $("#data");
         this._nValor = $("#valor");
+        
+        this.MensagemTexto = new Mensagem();
+        
         this._ViewNegociacao = new NegociacoesView($("#negociacoesView"));
-       
+        this._ViewMensagem = new MensagemView($("#mensagemtexto"));
         //Atualiza o model.
         this._listaNegociacoes = new ListaNegociacoes();
 
@@ -25,6 +28,9 @@ class NegociacaoController{
 
         //Atualiza a view.
         this._ViewNegociacao.update(this._listaNegociacoes.negociacoes);
+
+        //Atualiza a mensagem da view.
+        this._ViewMensagem.update("Cadastrado com sucesso!")
 
         this._freeFormulario();
 

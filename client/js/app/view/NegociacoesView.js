@@ -1,16 +1,10 @@
-class NegociacoesView{
+class NegociacoesView extends View{
 
     constructor(div){
 
-        this._divView = div;
+        super(div);
 
     }
-
-    update(model){
-        //Adiciona os elementos do método template na pagina index.html
-        this._divView.innerHTML = this.template(model);
-    }
-    
     
     template(model){
 
